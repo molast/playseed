@@ -1,0 +1,118 @@
+{
+  "id": "world-1-1",
+  "world": 1,
+  "stage": 1,
+  "title": "WORLD 1-1",
+  "reference": {
+    "map": "docs/games/reference-maps/super-mario/world-1-1.png",
+    "tileSize": 16,
+    "widthTiles": 212,
+    "heightTiles": 28
+  },
+  "widthTiles": 212,
+  "heightTiles": 32,
+  "tileSize": 32,
+  "timeLimit": 400,
+  "areas": [
+    { "id": "surface", "theme": "overworld", "originTileX": 0, "originTileY": 0, "widthTiles": 212, "heightTiles": 15, "groundTileY": 13 },
+    { "id": "bonus", "theme": "underground", "originTileX": 0, "originTileY": 17, "widthTiles": 27, "heightTiles": 15, "groundTileY": 13 }
+  ],
+  "playerStart": { "area": "surface", "tileX": 2, "tileY": 13 },
+  "goal": { "area": "surface", "kind": "flagpole", "tileX": 198, "castleTileX": 202 },
+  "warps": [
+    {
+      "id": "surface-to-bonus",
+      "from": { "area": "surface", "tileX": 57, "tileY": 9, "direction": "down", "widthTiles": 2 },
+      "to": { "area": "bonus", "tileX": 8, "tileY": 13 }
+    },
+    {
+      "id": "bonus-to-surface",
+      "from": { "area": "bonus", "tileX": 22, "tileY": 13, "direction": "right" },
+      "to": { "area": "surface", "tileX": 164, "tileY": 13 }
+    }
+  ],
+  "platforms": [
+    { "kind": "ground", "tileX": 0, "tileY": 13, "widthTiles": 69, "heightTiles": 2 },
+    { "kind": "ground", "tileX": 71, "tileY": 13, "widthTiles": 15, "heightTiles": 2 },
+    { "kind": "ground", "tileX": 89, "tileY": 13, "widthTiles": 64, "heightTiles": 2 },
+    { "kind": "ground", "tileX": 155, "tileY": 13, "widthTiles": 57, "heightTiles": 2 },
+    { "kind": "pipe", "tileX": 28, "tileY": 11, "widthTiles": 2, "heightTiles": 2 },
+    { "kind": "pipe", "tileX": 38, "tileY": 10, "widthTiles": 2, "heightTiles": 3 },
+    { "kind": "pipe", "tileX": 46, "tileY": 9, "widthTiles": 2, "heightTiles": 4 },
+    { "kind": "pipe", "tileX": 57, "tileY": 9, "widthTiles": 2, "heightTiles": 4 },
+    { "kind": "pipe", "tileX": 163, "tileY": 11, "widthTiles": 2, "heightTiles": 2 },
+    { "kind": "pipe", "tileX": 179, "tileY": 11, "widthTiles": 2, "heightTiles": 2 },
+    { "area": "bonus", "kind": "underground", "tileX": 4, "tileY": 13, "widthTiles": 23, "heightTiles": 2 },
+    { "area": "bonus", "kind": "underground", "tileX": 4, "tileY": 0, "widthTiles": 23, "heightTiles": 1 },
+    { "area": "bonus", "kind": "underground", "tileX": 4, "tileY": 0, "widthTiles": 1, "heightTiles": 13 },
+    { "area": "bonus", "kind": "underground", "tileX": 26, "tileY": 0, "widthTiles": 1, "heightTiles": 13 },
+    { "area": "bonus", "kind": "pipe", "tileX": 6, "tileY": 11, "widthTiles": 2, "heightTiles": 2 },
+    { "area": "bonus", "kind": "pipe", "tileX": 23, "tileY": 11, "widthTiles": 2, "heightTiles": 2 }
+  ],
+  "blocks": [
+    { "kind": "question", "tileX": 16, "tileY": 9, "content": "coin" },
+    { "kind": "brick", "tileX": 20, "tileY": 9, "content": "coin" },
+    { "kind": "question", "tileX": 21, "tileY": 9, "content": "power" },
+    { "kind": "brick", "tileX": 22, "tileY": 9 },
+    { "kind": "question", "tileX": 23, "tileY": 9, "content": "coin" },
+    { "kind": "brick", "tileX": 24, "tileY": 9, "content": "coin" },
+    { "kind": "question", "tileX": 22, "tileY": 5, "content": "coin" },
+    { "kind": "question", "tileX": 64, "tileY": 8, "content": "power" },
+    { "kind": "hidden", "tileX": 64, "tileY": 9, "content": "life" },
+    { "kind": "brick", "tileX": 77, "tileY": 9, "content": "coin" },
+    { "kind": "question", "tileX": 78, "tileY": 9, "content": "coin" },
+    { "kind": "brick", "tileX": 79, "tileY": 9 },
+    { "kind": "brick", "tileX": 80, "tileY": 5, "repeat": 8 },
+    { "kind": "brick", "tileX": 91, "tileY": 5, "repeat": 3 },
+    { "kind": "question", "tileX": 94, "tileY": 5, "content": "coin" },
+    { "kind": "question", "tileX": 94, "tileY": 9, "content": "coin" },
+    { "kind": "brick", "tileX": 100, "tileY": 9, "content": "power" },
+    { "kind": "question", "tileX": 101, "tileY": 9, "content": "star" },
+    { "kind": "brick", "tileX": 102, "tileY": 9 },
+    { "kind": "question", "tileX": 106, "tileY": 9, "content": "coin" },
+    { "kind": "question", "tileX": 109, "tileY": 9, "content": "coin" },
+    { "kind": "question", "tileX": 112, "tileY": 9, "content": "coin" },
+    { "kind": "brick", "tileX": 118, "tileY": 9 },
+    { "kind": "brick", "tileX": 123, "tileY": 5, "repeat": 4 },
+    { "kind": "brick", "tileX": 128, "tileY": 9, "repeat": 2 },
+    { "kind": "brick", "tileX": 130, "tileY": 5 },
+    { "kind": "question", "tileX": 131, "tileY": 5, "content": "coin", "repeat": 2 },
+    { "kind": "brick", "tileX": 133, "tileY": 5 },
+    { "kind": "brick", "tileX": 168, "tileY": 9, "repeat": 2 },
+    { "kind": "question", "tileX": 170, "tileY": 9, "content": "coin" },
+    { "kind": "brick", "tileX": 171, "tileY": 9 }
+  ],
+  "stairs": [
+    { "tileX": 134, "heights": [1, 2, 3, 4] },
+    { "tileX": 140, "heights": [4, 3, 2, 1] },
+    { "tileX": 148, "heights": [1, 2, 3, 4] },
+    { "tileX": 155, "heights": [4, 3, 2, 1] },
+    { "tileX": 181, "heights": [1, 2, 3, 4, 5, 6, 7, 8] }
+  ],
+  "coinRows": [
+    { "area": "bonus", "tileX": 10, "tileY": 5, "count": 6 },
+    { "area": "bonus", "tileX": 9, "tileY": 8, "count": 8 },
+    { "area": "bonus", "tileX": 9, "tileY": 11, "count": 9 }
+  ],
+  "piranhas": [
+    { "tileX": 38, "pipeTopTileY": 10 },
+    { "tileX": 46, "pipeTopTileY": 9, "phase": 1.1 },
+    { "tileX": 179, "pipeTopTileY": 11, "phase": 2.2 }
+  ],
+  "enemies": [
+    { "tileX": 22, "kind": "goomba" },
+    { "tileX": 40, "kind": "goomba" },
+    { "tileX": 51, "kind": "goomba" },
+    { "tileX": 52, "kind": "goomba" },
+    { "tileX": 80, "kind": "koopa" },
+    { "tileX": 82, "kind": "goomba" },
+    { "tileX": 97, "kind": "goomba" },
+    { "tileX": 98, "kind": "koopa" },
+    { "tileX": 114, "tileY": 7, "kind": "flying" },
+    { "tileX": 115, "kind": "goomba" },
+    { "tileX": 124, "kind": "koopa" },
+    { "tileX": 125, "kind": "goomba" },
+    { "tileX": 174, "kind": "goomba" },
+    { "tileX": 175, "kind": "koopa" }
+  ]
+}

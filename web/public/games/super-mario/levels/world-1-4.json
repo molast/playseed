@@ -1,0 +1,95 @@
+{
+  "id": "world-1-4",
+  "world": 1,
+  "stage": 4,
+  "title": "WORLD 1-4",
+  "reference": {
+    "map": "docs/games/reference-maps/super-mario/world-1-4.png",
+    "tileSize": 16,
+    "widthTiles": 160,
+    "heightTiles": 14
+  },
+  "widthTiles": 160,
+  "heightTiles": 15,
+  "tileSize": 32,
+  "timeLimit": 300,
+  "areas": [
+    { "id": "castle", "theme": "castle", "originTileX": 0, "originTileY": 0, "widthTiles": 160, "heightTiles": 15, "groundTileY": 13 }
+  ],
+  "playerStart": { "area": "castle", "tileX": 2, "tileY": 10 },
+  "goal": { "area": "castle", "kind": "axe", "tileX": 140, "tileY": 8 },
+  "warps": [],
+  "platforms": [
+    { "area": "castle", "kind": "castle", "tileX": 0, "tileY": 0, "widthTiles": 160, "heightTiles": 2 },
+    { "area": "castle", "kind": "castle", "tileX": 0, "tileY": 2, "widthTiles": 19, "heightTiles": 2 },
+    { "area": "castle", "kind": "castle", "tileX": 29, "tileY": 2, "widthTiles": 7, "heightTiles": 2 },
+    { "area": "castle", "kind": "castle", "tileX": 58, "tileY": 2, "widthTiles": 6, "heightTiles": 2 },
+    { "area": "castle", "kind": "castle", "tileX": 77, "tileY": 2, "widthTiles": 6, "heightTiles": 2 },
+    { "area": "castle", "kind": "castle", "tileX": 96, "tileY": 2, "widthTiles": 8, "heightTiles": 2 },
+    { "area": "castle", "kind": "castle", "tileX": 112, "tileY": 2, "widthTiles": 6, "heightTiles": 2 },
+    { "area": "castle", "kind": "castle", "tileX": 142, "tileY": 2, "widthTiles": 8, "heightTiles": 2 },
+
+    { "area": "castle", "kind": "castle", "tileX": 0, "tileY": 10, "widthTiles": 13, "heightTiles": 5 },
+    { "area": "castle", "kind": "castle", "tileX": 15, "tileY": 10, "widthTiles": 10, "heightTiles": 5 },
+    { "area": "castle", "kind": "castle", "tileX": 28, "tileY": 10, "widthTiles": 3, "heightTiles": 5 },
+    { "area": "castle", "kind": "castle", "tileX": 34, "tileY": 10, "widthTiles": 50, "heightTiles": 5 },
+    { "area": "castle", "kind": "castle", "tileX": 84, "tileY": 11, "widthTiles": 19, "heightTiles": 4 },
+    { "area": "castle", "kind": "castle", "tileX": 103, "tileY": 10, "widthTiles": 14, "heightTiles": 5 },
+    { "area": "castle", "kind": "castle", "tileX": 117, "tileY": 11, "widthTiles": 8, "heightTiles": 4 },
+    { "area": "castle", "kind": "castle", "tileX": 125, "tileY": 10, "widthTiles": 3, "heightTiles": 5 },
+
+    { "area": "castle", "kind": "moving", "tileX": 108, "tileY": 5, "widthTiles": 3, "heightTiles": 1, "motion": { "axis": "x", "distanceTiles": 5, "durationMs": 3100 } },
+
+    { "area": "castle", "kind": "bridge", "tileX": 128, "tileY": 10, "widthTiles": 1, "heightTiles": 1 },
+    { "area": "castle", "kind": "bridge", "tileX": 129, "tileY": 10, "widthTiles": 1, "heightTiles": 1 },
+    { "area": "castle", "kind": "bridge", "tileX": 130, "tileY": 10, "widthTiles": 1, "heightTiles": 1 },
+    { "area": "castle", "kind": "bridge", "tileX": 131, "tileY": 10, "widthTiles": 1, "heightTiles": 1 },
+    { "area": "castle", "kind": "bridge", "tileX": 132, "tileY": 10, "widthTiles": 1, "heightTiles": 1 },
+    { "area": "castle", "kind": "bridge", "tileX": 133, "tileY": 10, "widthTiles": 1, "heightTiles": 1 },
+    { "area": "castle", "kind": "bridge", "tileX": 134, "tileY": 10, "widthTiles": 1, "heightTiles": 1 },
+    { "area": "castle", "kind": "bridge", "tileX": 135, "tileY": 10, "widthTiles": 1, "heightTiles": 1 },
+    { "area": "castle", "kind": "bridge", "tileX": 136, "tileY": 10, "widthTiles": 1, "heightTiles": 1 },
+    { "area": "castle", "kind": "bridge", "tileX": 137, "tileY": 10, "widthTiles": 1, "heightTiles": 1 },
+    { "area": "castle", "kind": "bridge", "tileX": 138, "tileY": 10, "widthTiles": 1, "heightTiles": 1 },
+    { "area": "castle", "kind": "bridge", "tileX": 139, "tileY": 10, "widthTiles": 1, "heightTiles": 1 },
+    { "area": "castle", "kind": "bridge", "tileX": 140, "tileY": 10, "widthTiles": 1, "heightTiles": 1 },
+    { "area": "castle", "kind": "castle", "tileX": 141, "tileY": 9, "widthTiles": 2, "heightTiles": 6 },
+    { "area": "castle", "kind": "castle", "tileX": 143, "tileY": 12, "widthTiles": 17, "heightTiles": 3 }
+  ],
+  "blocks": [
+    { "area": "castle", "kind": "question", "tileX": 30, "tileY": 6, "content": "power" }
+  ],
+  "stairs": [],
+  "coinRows": [
+    { "area": "castle", "tileX": 86, "tileY": 5, "count": 3 },
+    { "area": "castle", "tileX": 85, "tileY": 8, "count": 3 }
+  ],
+  "enemies": [],
+  "hazards": {
+    "lava": [
+      { "area": "castle", "tileX": 13, "tileY": 13, "widthTiles": 2, "heightTiles": 2 },
+      { "area": "castle", "tileX": 25, "tileY": 13, "widthTiles": 3, "heightTiles": 2 },
+      { "area": "castle", "tileX": 31, "tileY": 13, "widthTiles": 3, "heightTiles": 2 },
+      { "area": "castle", "tileX": 128, "tileY": 11, "widthTiles": 13, "heightTiles": 4 }
+    ],
+    "fireBars": [
+      { "area": "castle", "tileX": 24, "tileY": 7, "lengthTiles": 3, "durationMs": 2800, "direction": 1, "phase": 0.6 },
+      { "area": "castle", "tileX": 39, "tileY": 4, "lengthTiles": 3, "durationMs": 2500, "direction": -1, "phase": 2.5 },
+      { "area": "castle", "tileX": 48, "tileY": 4, "lengthTiles": 3, "durationMs": 2700, "direction": 1, "phase": 1.3 },
+      { "area": "castle", "tileX": 54, "tileY": 4, "lengthTiles": 3, "durationMs": 2600, "direction": -1, "phase": 0.5 },
+      { "area": "castle", "tileX": 64, "tileY": 3, "lengthTiles": 3, "durationMs": 2900, "direction": 1, "phase": 2.2 },
+      { "area": "castle", "tileX": 70, "tileY": 3, "lengthTiles": 3, "durationMs": 2600, "direction": -1, "phase": 0.9 },
+      { "area": "castle", "tileX": 76, "tileY": 9, "lengthTiles": 3, "durationMs": 2800, "direction": 1, "phase": 3.3 },
+      { "area": "castle", "tileX": 85, "tileY": 9, "lengthTiles": 3, "durationMs": 2500, "direction": -1, "phase": 1.7 }
+    ]
+  },
+  "boss": {
+    "kind": "bowser",
+    "area": "castle",
+    "tileX": 136,
+    "tileY": 10,
+    "patrolStartTileX": 131,
+    "patrolEndTileX": 139,
+    "health": 5
+  }
+}

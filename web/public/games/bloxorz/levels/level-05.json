@@ -1,0 +1,1 @@
+{"id":"level-05","name":"环形岔路","difficulty":"easy","width":10,"height":7,"map":["0000000000","0011111100","0011111100","0011001100","0011111100","0011211600","0000000000"],"start":{"x":2,"y":1,"orientation":"standing"},"switches":[],"bridges":[]}

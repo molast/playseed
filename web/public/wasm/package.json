@@ -1,0 +1,15 @@
+{
+  "name": "play-seed-wasm",
+  "version": "0.1.0",
+  "license": "MIT",
+  "files": [
+    "play_seed_wasm_bg.wasm",
+    "play_seed_wasm.js",
+    "play_seed_wasm.d.ts"
+  ],
+  "module": "play_seed_wasm.js",
+  "types": "play_seed_wasm.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}

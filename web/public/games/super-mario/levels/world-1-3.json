@@ -1,0 +1,77 @@
+{
+  "id": "world-1-3",
+  "world": 1,
+  "stage": 3,
+  "title": "WORLD 1-3",
+  "reference": {
+    "map": "docs/games/reference-maps/super-mario/world-1-3.png",
+    "tileSize": 16,
+    "widthTiles": 164,
+    "heightTiles": 14
+  },
+  "widthTiles": 165,
+  "heightTiles": 15,
+  "tileSize": 32,
+  "timeLimit": 300,
+  "areas": [
+    { "id": "athletic", "theme": "athletic", "originTileX": 0, "originTileY": 0, "widthTiles": 165, "heightTiles": 15, "groundTileY": 13 }
+  ],
+  "playerStart": { "area": "athletic", "tileX": 2, "tileY": 13 },
+  "goal": { "area": "athletic", "kind": "flagpole", "tileX": 152, "castleTileX": 158 },
+  "warps": [],
+  "platforms": [
+    { "area": "athletic", "kind": "ground", "tileX": 0, "tileY": 13, "widthTiles": 13, "heightTiles": 2 },
+
+    { "area": "athletic", "kind": "ground", "tileX": 18, "tileY": 12, "widthTiles": 4, "heightTiles": 3 },
+    { "area": "athletic", "kind": "ground", "tileX": 24, "tileY": 9, "widthTiles": 8, "heightTiles": 6 },
+    { "area": "athletic", "kind": "ground", "tileX": 26, "tileY": 5, "widthTiles": 5, "heightTiles": 4 },
+    { "area": "athletic", "kind": "ground", "tileX": 32, "tileY": 12, "widthTiles": 3, "heightTiles": 3 },
+    { "area": "athletic", "kind": "ground", "tileX": 35, "tileY": 8, "widthTiles": 5, "heightTiles": 7 },
+    { "area": "athletic", "kind": "ground", "tileX": 40, "tileY": 4, "widthTiles": 7, "heightTiles": 11 },
+    { "area": "athletic", "kind": "ground", "tileX": 50, "tileY": 13, "widthTiles": 4, "heightTiles": 2 },
+    { "area": "athletic", "kind": "ground", "tileX": 59, "tileY": 13, "widthTiles": 5, "heightTiles": 2 },
+    { "area": "athletic", "kind": "ground", "tileX": 60, "tileY": 5, "widthTiles": 4, "heightTiles": 8 },
+    { "area": "athletic", "kind": "ground", "tileX": 65, "tileY": 13, "widthTiles": 5, "heightTiles": 2 },
+    { "area": "athletic", "kind": "ground", "tileX": 70, "tileY": 9, "widthTiles": 3, "heightTiles": 6 },
+    { "area": "athletic", "kind": "ground", "tileX": 76, "tileY": 6, "widthTiles": 6, "heightTiles": 9 },
+    { "area": "athletic", "kind": "ground", "tileX": 98, "tileY": 11, "widthTiles": 4, "heightTiles": 4 },
+    { "area": "athletic", "kind": "ground", "tileX": 104, "tileY": 7, "widthTiles": 8, "heightTiles": 8 },
+    { "area": "athletic", "kind": "ground", "tileX": 113, "tileY": 13, "widthTiles": 3, "heightTiles": 2 },
+    { "area": "athletic", "kind": "ground", "tileX": 116, "tileY": 9, "widthTiles": 4, "heightTiles": 6 },
+    { "area": "athletic", "kind": "ground", "tileX": 122, "tileY": 9, "widthTiles": 4, "heightTiles": 6 },
+
+    { "area": "athletic", "kind": "moving", "tileX": 55, "tileY": 10, "widthTiles": 3, "heightTiles": 1, "motion": { "axis": "y", "distanceTiles": 4, "durationMs": 3200 } },
+    { "area": "athletic", "kind": "moving", "tileX": 86, "tileY": 8, "widthTiles": 3, "heightTiles": 1, "motion": { "axis": "x", "distanceTiles": 5, "durationMs": 3000 } },
+    { "area": "athletic", "kind": "moving", "tileX": 91, "tileY": 9, "widthTiles": 3, "heightTiles": 1, "motion": { "axis": "x", "distanceTiles": 5, "durationMs": 3000, "phase": 3.1416 } },
+    { "area": "athletic", "kind": "moving", "tileX": 130, "tileY": 6, "widthTiles": 3, "heightTiles": 1, "motion": { "axis": "y", "distanceTiles": 5, "durationMs": 3400, "phase": 1.5708 } },
+
+    { "area": "athletic", "kind": "ground", "tileX": 131, "tileY": 13, "widthTiles": 34, "heightTiles": 2 }
+  ],
+  "blocks": [
+    { "area": "athletic", "kind": "question", "tileX": 58, "tileY": 8, "content": "power" }
+  ],
+  "stairs": [
+    { "area": "athletic", "tileX": 138, "heights": [1, 2, 3, 4, 5, 6, 7, 8] }
+  ],
+  "coinRows": [
+    { "area": "athletic", "tileX": 27, "tileY": 4, "count": 4 },
+    { "area": "athletic", "tileX": 37, "tileY": 6, "count": 2 },
+    { "area": "athletic", "tileX": 47, "tileY": 3, "count": 4 },
+    { "area": "athletic", "tileX": 67, "tileY": 4, "count": 2 },
+    { "area": "athletic", "tileX": 73, "tileY": 3, "count": 2 },
+    { "area": "athletic", "tileX": 91, "tileY": 3, "count": 2 },
+    { "area": "athletic", "tileX": 96, "tileY": 3, "count": 2 },
+    { "area": "athletic", "tileX": 113, "tileY": 11, "count": 3 },
+    { "area": "athletic", "tileX": 118, "tileY": 3, "count": 2 }
+  ],
+  "enemies": [
+    { "area": "athletic", "tileX": 29, "tileY": 4, "kind": "koopa" },
+    { "area": "athletic", "tileX": 43, "tileY": 3, "kind": "goomba" },
+    { "area": "athletic", "tileX": 45, "tileY": 3, "kind": "goomba" },
+    { "area": "athletic", "tileX": 74, "tileY": 4, "kind": "flying" },
+    { "area": "athletic", "tileX": 79, "tileY": 5, "kind": "goomba" },
+    { "area": "athletic", "tileX": 108, "tileY": 6, "kind": "koopa" },
+    { "area": "athletic", "tileX": 115, "tileY": 5, "kind": "flying" },
+    { "area": "athletic", "tileX": 132, "kind": "koopa" }
+  ]
+}
