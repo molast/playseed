@@ -48,8 +48,3 @@ next-env.d.ts
 
 # rust / wasm-pack
 target/
-
-# cloudflare
-.wrangler/
-.dev.vars*
-!.dev.vars.example

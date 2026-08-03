@@ -1,15 +1,9 @@
 "use client";
 
-import { Check, LoaderCircle, Settings, Trash2, Volume2, X } from "lucide-react";
+import { Check, LoaderCircle, Settings, Volume2, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
-import {
-  azureStyles,
-  azureVoices,
-  iflytekVoices,
-  speechManager,
-  type SpeechSettings,
-} from "@/speech";
+import { speechManager, type SpeechSettings } from "@/speech";
 import { practiceGoalOptions, type PracticeGoal } from "@/lib/practice-settings";
 
 export function SpeechSettingsDialog({
@@ -27,7 +21,6 @@ export function SpeechSettingsDialog({
 }) {
   const [browserVoices, setBrowserVoices] = useState<SpeechSynthesisVoice[]>([]);
   const [testing, setTesting] = useState(false);
-  const [clearing, setClearing] = useState(false);
   const [message, setMessage] = useState("");
 
   useEffect(() => {
@@ -57,11 +50,6 @@ export function SpeechSettingsDialog({
     setMessage("");
   }
 
-  const selectedAzureVoice = azureVoices.find((voice) => voice.id === settings.azureVoice) ?? azureVoices[0];
-  const availableAzureStyles = azureStyles.filter((style) =>
-    (selectedAzureVoice.styles as readonly string[]).includes(style.id),
-  );
-
   async function testVoice() {
     setTesting(true);
     setMessage("");
@@ -80,20 +68,7 @@ export function SpeechSettingsDialog({
     }
   }
 
-  async function clearCache() {
-    setClearing(true);
-    setMessage("");
-    try {
-      await speechManager.clearCache();
-      setMessage("本地语音缓存已清除");
-    } catch {
-      setMessage("无法清除本地语音缓存。");
-    } finally {
-      setClearing(false);
-    }
-  }
-
-  const messageIsSuccess = message === "试听完成" || message === "本地语音缓存已清除";
+  const messageIsSuccess = message === "试听完成";
 
   return (
     <div
@@ -139,19 +114,7 @@ export function SpeechSettingsDialog({
                 className={settings.provider === "auto" ? "active" : ""}
                 onClick={() => patch({ provider: "auto" })}
               >
-                智能选择
-              </button>
-              <button
-                className={settings.provider === "iflytek" ? "active" : ""}
-                onClick={() => patch({ provider: "iflytek" })}
-              >
-                科大讯飞
-              </button>
-              <button
-                className={settings.provider === "azure" ? "active" : ""}
-                onClick={() => patch({ provider: "azure" })}
-              >
-                Azure Speech
+                本地录音优先
               </button>
               <button
                 className={settings.provider === "browser" ? "active" : ""}
@@ -162,41 +125,7 @@ export function SpeechSettingsDialog({
             </div>
           </div>
 
-          {settings.provider === "iflytek" || settings.provider === "auto" ? (
-            <label className="settings-field">
-              <span className="settings-label">科大讯飞音色</span>
-              <select value={settings.iflytekVoice} onChange={(event) => patch({ iflytekVoice: event.target.value })}>
-                {iflytekVoices.map((voice) => <option value={voice.id} key={voice.id}>{voice.label}</option>)}
-              </select>
-            </label>
-          ) : settings.provider === "azure" ? (
-            <>
-              <label className="settings-field">
-                <span className="settings-label">Azure 音色</span>
-                <select
-                  value={settings.azureVoice}
-                  onChange={(event) => {
-                    const voice = azureVoices.find((item) => item.id === event.target.value) ?? azureVoices[0];
-                    const style = (voice.styles as readonly string[]).includes(settings.azureStyle)
-                      ? settings.azureStyle
-                      : "default";
-                    patch({ azureVoice: voice.id, azureStyle: style });
-                  }}
-                >
-                  {azureVoices.map((voice) => <option value={voice.id} key={voice.id}>{voice.label}</option>)}
-                </select>
-              </label>
-              <label className="settings-field">
-                <span className="settings-label">语音风格</span>
-                <select
-                  value={settings.azureStyle}
-                  onChange={(event) => patch({ azureStyle: event.target.value as SpeechSettings["azureStyle"] })}
-                >
-                  {availableAzureStyles.map((style) => <option value={style.id} key={style.id}>{style.label}</option>)}
-                </select>
-              </label>
-            </>
-          ) : settings.provider === "browser" ? (
+          {settings.provider === "browser" ? (
             <label className="settings-field">
               <span className="settings-label">系统中文音色</span>
               <select value={settings.browserVoice} onChange={(event) => patch({ browserVoice: event.target.value })}>
@@ -230,10 +159,6 @@ export function SpeechSettingsDialog({
             </button>
             {message && <span className={messageIsSuccess ? "success" : "error"}>{messageIsSuccess && <Check size={15} />}{message}</span>}
           </div>
-          <button className="cache-clear-button" onClick={() => void clearCache()} disabled={clearing}>
-            {clearing ? <LoaderCircle className="spin" size={16} /> : <Trash2 size={16} />}
-            清除本地语音缓存
-          </button>
         </div>
       </section>
     </div>
