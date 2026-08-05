@@ -10,6 +10,7 @@ import {
   Download,
   Flame,
   Gamepad2,
+  Github,
   GraduationCap,
   LayoutDashboard,
   Library,
@@ -176,6 +177,16 @@ export function PlaySeedApp() {
             <Star size={18} fill="currentColor" />
             <strong>{summary.points}</strong>
           </div>
+          <a
+            className="github-link"
+            href="https://github.com/molast/playseed"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="GitHub · molast/playseed"
+            aria-label="在 GitHub 查看 molast/playseed"
+          >
+            <Github size={20} />
+          </a>
           <button className="help-button" title="帮助" aria-label="帮助">
             <CircleHelp size={20} />
           </button>

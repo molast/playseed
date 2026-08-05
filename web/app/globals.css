@@ -328,6 +328,7 @@ a:focus-visible {
   color: #9a7300;
 }
 
+.github-link,
 .help-button {
   width: 35px;
   height: 35px;
@@ -338,6 +339,18 @@ a:focus-visible {
   background: #fff;
   color: var(--muted);
   cursor: pointer;
+}
+
+.github-link {
+  color: #24292f;
+  text-decoration: none;
+  transition: border-color 150ms ease, background 150ms ease, color 150ms ease;
+}
+
+.github-link:hover {
+  border-color: #aeb9b2;
+  background: #f3f5f4;
+  color: #000;
 }
 
 .content {
@@ -4796,6 +4809,10 @@ a:focus-visible {
 }
 
 @media (max-width: 620px) {
+  .top-stat.streak {
+    display: none;
+  }
+
   .top-stat {
     min-width: 52px;
     padding: 0 8px;
